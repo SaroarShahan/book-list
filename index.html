@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List || OOP in JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="text-center border-bottom border-primary">
+                    <h2>Book List</h2>
+                </div>
+
+                <div class="mt-3">
+                    <form class="form">
+                        <div class="form-group">
+                          <label for="bookName">Name</label>
+                          <input type="text" class="form-control" id="bookName" placeholder="Enter book name">
+                        </div>
+                        <div class="form-group">
+                          <label for="author">Author</label>
+                          <input type="text" class="form-control" id="author" placeholder="Enter author name">
+                        </div>
+                        <div class="form-group">
+                            <label for="publishedDate">Published date</label>
+                            <input type="text" class="form-control" id="publishedDate" placeholder="Enter published date">
+                        </div>
+                        <div class="form-group">
+                            <label for="isbn">ISBN</label>
+                            <input type="text" class="form-control" id="isbn" placeholder="Enter ISBN number">
+                        </div>
+                       
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+
+                <table class="table table-striped mt-5">
+                    <thead class="thead-dark">
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Published Date</th>
+                        <th>ISBN</th>
+                    </thead>
+                    <tbody class="book-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
