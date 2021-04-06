@@ -137,6 +137,16 @@
          * Clear input fields
          */
         ui.clearFields();
+
+         /**
+         * Hide Modal
+         */
+        const modal = document.querySelector("#addBookModal");
+        modal.classList.remove("show", "modal-zIndex")
+        modal.style.display = "none";
+        modal.style.paddingRight = "0px";
+        
+        document.querySelector(".modal-backdrop").classList.remove("show", "fade", "modal-backdrop");
     })
 
      /**
